@@ -1,0 +1,25 @@
+{
+  "CategoryName": "Groceries",
+  "items": [
+    { "name": "Bread (1 loaf)", "price": 150 },
+    { "name": "Rice (1 kg)", "price": 800 },
+    { "name": "Sugar (1 kg)", "price": 600 },
+    { "name": "Flour (1 kg)", "price": 550 },
+    { "name": "Cooking Oil (1 liter)", "price": 1200 },
+    { "name": "Milk (1 liter)", "price": 700 },
+    { "name": "Eggs (30 pack)", "price": 1800 },
+    { "name": "Chicken (1 kg)", "price": 1400 },
+    { "name": "Lamb Meat (1 kg)", "price": 3500 },
+    { "name": "Tomatoes (1 kg)", "price": 300 },
+    { "name": "Potatoes (1 kg)", "price": 350 },
+    { "name": "Onions (1 kg)", "price": 400 },
+    { "name": "Bananas (1 kg)", "price": 450 },
+    { "name": "Dates (1 kg)", "price": 900 },
+    { "name": "Tea (200g)", "price": 650 },
+    { "name": "Coffee (250g)", "price": 1100 },
+    { "name": "Salt (500g)", "price": 150 },
+    { "name": "Beans (1 kg)", "price": 500 },
+    { "name": "Lentils (1 kg)", "price": 550 },
+    { "name": "Cheese (500g)", "price": 950 }
+  ]
+}

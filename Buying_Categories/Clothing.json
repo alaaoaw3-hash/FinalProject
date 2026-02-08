@@ -1,0 +1,25 @@
+{
+  "CategoryName": "Clothing",
+  "items": [
+    { "name": "Men's Thobe (Traditional)", "price": 8500 },
+    { "name": "Men's T-Shirt (Cotton)", "price": 2500 },
+    { "name": "Men's Jeans", "price": 5500 },
+    { "name": "Men's Formal Shirt", "price": 4500 },
+    { "name": "Men's Jacket", "price": 9500 },
+    { "name": "Women's Abaya (Simple)", "price": 6500 },
+    { "name": "Women's Dress", "price": 7500 },
+    { "name": "Women's Blouse", "price": 4000 },
+    { "name": "Women's Skirt", "price": 4500 },
+    { "name": "Women's Scarf (Hijab)", "price": 2000 },
+    { "name": "Children's School Uniform", "price": 5500 },
+    { "name": "Kids' T-Shirt", "price": 1800 },
+    { "name": "Kids' Pants", "price": 2200 },
+    { "name": "Sneakers (Men's)", "price": 8500 },
+    { "name": "Sandals (Traditional)", "price": 3500 },
+    { "name": "Formal Shoes (Men's)", "price": 11000 },
+    { "name": "Women's Flat Shoes", "price": 5500 },
+    { "name": "Sports Shoes", "price": 9500 },
+    { "name": "Leather Belt", "price": 3000 },
+    { "name": "Undergarments (3-Pack)", "price": 3500 }
+  ]
+}

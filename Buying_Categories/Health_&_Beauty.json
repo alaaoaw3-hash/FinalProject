@@ -1,0 +1,25 @@
+{
+  "CategoryNameory": "Health & Beauty",
+  "items": [
+    { "name": "Toothpaste (Colgate)", "price": 1200 },
+    { "name": "Toothbrush (Pack of 2)", "price": 900 },
+    { "name": "Shampoo (400ml)", "price": 2800 },
+    { "name": "Conditioner (200ml)", "price": 2200 },
+    { "name": "Soap Bar (Lux, 4 pack)", "price": 1800 },
+    { "name": "Body Lotion (Vaseline)", "price": 3500 },
+    { "name": "Face Cream (Nivea)", "price": 4500 },
+    { "name": "Sunscreen (SPF 50)", "price": 5500 },
+    { "name": "Deodorant Spray", "price": 2500 },
+    { "name": "Razor Blades (Gillette, 4 pack)", "price": 3200 },
+    { "name": "Shaving Cream", "price": 1800 },
+    { "name": "Hair Oil (Coconut)", "price": 1500 },
+    { "name": "Comb Set", "price": 800 },
+    { "name": "Tissues (Box of 5)", "price": 1200 },
+    { "name": "Sanitary Pads (Pack)", "price": 2500 },
+    { "name": "Baby Diapers (Pack of 20)", "price": 5500 },
+    { "name": "Multivitamins (Bottle)", "price": 6500 },
+    { "name": "Pain Relievers (Panadol, 24 tablets)", "price": 1800 },
+    { "name": "First Aid Kit (Basic)", "price": 4500 },
+    { "name": "Hand Sanitizer (500ml)", "price": 2200 }
+  ]
+}

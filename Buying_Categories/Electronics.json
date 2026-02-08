@@ -1,0 +1,25 @@
+{
+  "CategoryName": "Electronics",
+  "items": [
+    { "name": "Samsung Galaxy A14", "price": 85000 },
+    { "name": "iPhone 13 (128GB)", "price": 245000 },
+    { "name": "Xiaomi Redmi 12", "price": 65000 },
+    { "name": "Samsung 32\" LED TV", "price": 110000 },
+    { "name": "LG 43\" Smart TV", "price": 175000 },
+    { "name": "Huawei Laptop (Core i5)", "price": 195000 },
+    { "name": "HP Laptop (Core i3)", "price": 155000 },
+    { "name": "Lenovo IdeaPad", "price": 140000 },
+    { "name": "Samsung Power Bank (20000mAh)", "price": 8500 },
+    { "name": "Anker Power Bank (10000mAh)", "price": 6500 },
+    { "name": "JBL Bluetooth Speaker", "price": 18500 },
+    { "name": "Sony Headphones (Wired)", "price": 7500 },
+    { "name": "Wireless Earbuds (Generic)", "price": 4500 },
+    { "name": "Samsung Charger (25W)", "price": 3500 },
+    { "name": "USB-C Cable (Original)", "price": 2500 },
+    { "name": "Wireless Mouse", "price": 3500 },
+    { "name": "Keyboard (USB)", "price": 5500 },
+    { "name": "16GB USB Flash Drive", "price": 3000 },
+    { "name": "External Hard Drive (1TB)", "price": 28000 },
+    { "name": "WiFi Router (TP-Link)", "price": 15000 }
+  ]
+}

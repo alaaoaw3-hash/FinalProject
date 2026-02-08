@@ -1,0 +1,25 @@
+{
+  "CategoryName": "Home & Kitchen",
+  "items": [
+    { "name": "Gas Stove (2 Burners)", "price": 18500 },
+    { "name": "Rice Cooker (Medium)", "price": 9500 },
+    { "name": "Electric Kettle", "price": 5500 },
+    { "name": "Blender", "price": 8500 },
+    { "name": "Set of Pots (5 pieces)", "price": 12000 },
+    { "name": "Frying Pan (Non-stick)", "price": 4500 },
+    { "name": "Dinner Set (24 pieces)", "price": 15000 },
+    { "name": "Plastic Storage Containers (Set)", "price": 3500 },
+    { "name": "Wooden Dining Table", "price": 45000 },
+    { "name": "Plastic Chairs (4 pieces)", "price": 18000 },
+    { "name": "Single Mattress", "price": 25000 },
+    { "name": "Pillows (2 pieces)", "price": 4500 },
+    { "name": "Blanket (Wool)", "price": 8500 },
+    { "name": "Ceiling Fan", "price": 15000 },
+    { "name": "LED Bulbs (Pack of 4)", "price": 2500 },
+    { "name": "Floor Cleaning Mop", "price": 2000 },
+    { "name": "Laundry Detergent (3kg)", "price": 4500 },
+    { "name": "Dish Soap (Liquid, 1L)", "price": 1800 },
+    { "name": "Trash Bin (Large)", "price": 3500 },
+    { "name": "Water Cooler Bottle (18L)", "price": 1200 }
+  ]
+}
