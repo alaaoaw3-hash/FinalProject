@@ -129,6 +129,7 @@ namespace Program
                         user.ViewBalance();
                         break;
                     case 2:
+                        user.PlotTheGraphs();
                         break;
                     case 3:
                         user.HandleAddingMoney();
@@ -139,6 +140,14 @@ namespace Program
                     case 5:
                         stop = true;
                         break;
+
+                    // developer options    
+                    case 6:
+                        user.__PrintOutTransactions();
+                        break; 
+                    case 7:
+                        user.__PrintOutSpendingSummary();
+                        break;       
                 }        
             }
         }

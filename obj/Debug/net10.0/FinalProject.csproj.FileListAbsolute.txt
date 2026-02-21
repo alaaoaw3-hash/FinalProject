@@ -12,3 +12,4 @@ C:\Users\Alaa\Desktop\Coding\University\C#\Prof.Qusai assignments\FinalProject\o
 C:\Users\Alaa\Desktop\Coding\University\C#\Prof.Qusai assignments\FinalProject\obj\Debug\net10.0\FinalProject.pdb
 C:\Users\Alaa\Desktop\Coding\University\C#\Prof.Qusai assignments\FinalProject\obj\Debug\net10.0\FinalProject.genruntimeconfig.cache
 C:\Users\Alaa\Desktop\Coding\University\C#\Prof.Qusai assignments\FinalProject\obj\Debug\net10.0\ref\FinalProject.dll
+C:\Users\Alaa\Desktop\Coding\University\C#\Prof.Qusai assignments\FinalProject\obj\Debug\net10.0\FinalProject.sourcelink.json
