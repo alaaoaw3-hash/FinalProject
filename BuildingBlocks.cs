@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Text.Json;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BuildingBlocks
 {
@@ -17,6 +18,7 @@ namespace BuildingBlocks
     }
     public class Category
     {
+        // this class resembles a JSON file of the items
         public string? CategoryName {get; set;}
         public Item[] items { get; set; } = Array.Empty<Item>();
     }
@@ -35,11 +37,11 @@ namespace BuildingBlocks
         }
         public string MoneyState
         {
-            get {return moneyState;}
+            get {return moneyState!;}
         }
         public string Category
         {
-            get {return category;}
+            get {return category!;}
         }
         public decimal Amount
         {
@@ -52,7 +54,7 @@ namespace BuildingBlocks
 
         public override string ToString()
         {
-            return $"[TransactionID: {TransactionID}, moneyState: {MoneyState}, Category: {Category}, Amount: {Amount}, Date: {TransactionDate}]";
+            return $"TransactionID: {TransactionID}, moneyState: {MoneyState}, Category: {Category}, Amount: {Amount}, Date: {TransactionDate}";
         }
     }
     class SpendingSummary
@@ -91,7 +93,7 @@ namespace BuildingBlocks
         int t_id = 0;
         List<Transaction> transactionRecord = [];
 
-        static bool __transactionRecordPopulated = false;
+        // static bool __transactionRecordPopulated = false;
 
         /* ---- Public methods ---- */
         public void ViewBalance()
@@ -156,7 +158,7 @@ namespace BuildingBlocks
             bool didFinishBuying = false;
             while (!didFinishBuying)
             {
-                Console.WriteLine("\nWhat is the category of the thing you want to buy?");
+                Console.WriteLine("\nWhat is the category you want to buy from?");
                 Console.WriteLine("Available categories: A- Groceries, B- Clothing, C- Electronics, D- Health & beauty, E- Home & Kitchen");
                 Console.Write("(Choose one of the characters): ");
                 if(!char.TryParse(Console.ReadLine(), out chosenCategory) || !availableCharacters.Contains(char.ToLower(chosenCategory)))
@@ -199,7 +201,7 @@ namespace BuildingBlocks
                 Category? chosenCategoryAndItsItems = JsonSerializer.Deserialize<Category>(JSON_String);
 
                 WhenBalanceIsNotEnough:
-                ShowItems(chosenCategoryAndItsItems);
+                ShowItems(chosenCategoryAndItsItems!);
 
                 // Allowing user to choose an item, and rejecting invalid inputs
                 ChooseItemAgain:
@@ -212,9 +214,9 @@ namespace BuildingBlocks
                     goto ChooseItemAgain;
                 }
 
-                var chosenItem = chosenCategoryAndItsItems.items[chosenItemNumber - 1];
+                var chosenItem = chosenCategoryAndItsItems?.items[chosenItemNumber - 1];
 
-                ShowReceipt(chosenItem);
+                ShowReceipt(chosenItem!);
                 
                 ChooseAmountAgain:
                 Console.Write("Amount: ");
@@ -227,7 +229,7 @@ namespace BuildingBlocks
                 }
 
                 // calculate cost
-                decimal cost = amountOfItem * chosenItem.price;
+                decimal cost = amountOfItem * chosenItem!.price;
                 string cost_balanceCheck = CompareCostAndBalance(cost, chosenCategoryString);
 
                 // Can the user buy the item?
@@ -242,6 +244,23 @@ namespace BuildingBlocks
             }
 
 
+        }
+        public void PrintOutTransactions()
+        {   
+            if(transactionRecord.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nTransaction record is empty.\n");
+                Console.ResetColor();
+                return;
+            }
+
+            // print out the transactions
+            Console.Write("\n");
+            foreach(var transaction in transactionRecord)
+            {
+                Console.WriteLine(transaction);
+            }
         }
 
         /* ---- Helper Methods (all are private) ----*/
@@ -541,22 +560,6 @@ namespace BuildingBlocks
         }
         
         // Develper Methods
-        public void __PrintOutTransactions()
-        {
-            // Populate "transactionsRecord"
-            if (!__transactionRecordPopulated)
-            {
-                GraphingTestData();
-                __transactionRecordPopulated = true;
-            }
-                
-
-            // print out the transactions
-            foreach(var transaction in transactionRecord)
-            {
-                Console.WriteLine(transaction);
-            }
-        }
         public void __PrintOutSpendingSummary()
         {
             SpendingSummary speandingSummary = CalculateSumsAndPercentages();

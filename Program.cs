@@ -113,9 +113,9 @@ namespace Program
                     Console.ResetColor();
                     isUsageShown = true;
                 }
-                Console.WriteLine("\n1- View Balance\n2- Graph Spendings\n3- Add Money\n4- Buy\n5- Exit program");
+                Console.WriteLine("\n1- View Balance\n2- Graph Spendings\n3- Show Transactions\n4- Add Money\n5- Buy\n6- Exit Program");
 
-                if(!int.TryParse(Console.ReadLine(), out int chosenOption) || chosenOption < 1 || chosenOption > 5)
+                if(!int.TryParse(Console.ReadLine(), out int chosenOption) || chosenOption < 1 || chosenOption > 6)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nYou may choose one number of the available options.\n");
@@ -132,19 +132,19 @@ namespace Program
                         user.PlotTheGraphs();
                         break;
                     case 3:
+                        user.PrintOutTransactions();
+                        break; 
+                    case 4:
                         user.HandleAddingMoney();
                         break;
-                    case 4:
+                    case 5:
                         user.Buy();
                         break;
-                    case 5:
+                    case 6:
                         stop = true;
                         break;
 
                     // developer options    
-                    case 6:
-                        user.__PrintOutTransactions();
-                        break; 
                     case 7:
                         user.__PrintOutSpendingSummary();
                         break;       
